@@ -10,6 +10,7 @@
  *****************************************************************************/
 #pragma once
 
+#include <optional>
 #include <algorithm>
 #include <chrono>
 #include <limits>

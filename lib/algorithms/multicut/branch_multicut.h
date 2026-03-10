@@ -11,6 +11,7 @@
 
 #pragma once
 
+#include <optional>
 #include <mpi.h>
 
 #include <algorithm>
