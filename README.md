@@ -7,6 +7,9 @@ VieCut 1.00
 [![GitHub Stars](https://img.shields.io/github/stars/KaHIP/VieCut)](https://github.com/KaHIP/VieCut/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/KaHIP/VieCut)](https://github.com/KaHIP/VieCut/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/KaHIP/VieCut)](https://github.com/KaHIP/VieCut/commits)
+[![JEA 2018](https://img.shields.io/badge/JEA'18-10.1145/3274662-blue)](https://doi.org/10.1145/3274662)
+[![IPDPS 2019](https://img.shields.io/badge/IPDPS'19-10.1109/IPDPS.2019.00013-blue)](https://doi.org/10.1109/IPDPS.2019.00013)
+[![ESA 2020](https://img.shields.io/badge/ESA'20-10.4230/LIPIcs.ESA.2020.59-blue)](https://doi.org/10.4230/LIPIcs.ESA.2020.59)
 [![Heidelberg University](https://img.shields.io/badge/Heidelberg-University-c1002a)](https://www.uni-heidelberg.de)
 =====
 
@@ -201,47 +204,64 @@ VieCut is free software provided under the MIT License.
 If you publish results using our algorithms, please cite the applicable papers:
 
 ```bibtex
-@article{henzinger2018practical,
-  author  = {Monika Henzinger and Alexander Noe and Christian Schulz and Darren Strash},
-  title   = {Practical Minimum Cut Algorithms},
-  journal = {{ACM} Journal of Experimental Algorithmics},
-  volume  = {23},
-  year    = {2018}
+@article{DBLP:journals/jea/HenzingerNSS18,
+  author    = {Monika Henzinger and Alexander Noe and Christian Schulz and Darren Strash},
+  title     = {Practical Minimum Cut Algorithms},
+  journal   = {{ACM} J. Exp. Algorithmics},
+  volume    = {23},
+  year      = {2018},
+  doi       = {10.1145/3274662}
 }
 
-@inproceedings{henzinger2019shared,
+@inproceedings{DBLP:conf/ipps/HenzingerN019,
   author    = {Monika Henzinger and Alexander Noe and Christian Schulz},
-  title     = {{Shared-memory Exact Minimum Cuts}},
-  booktitle = {Proceedings of the 33rd International Parallel and Distributed Processing Symposium (IPDPS)},
-  year      = {2019}
+  title     = {Shared-Memory Exact Minimum Cuts},
+  booktitle = {2019 {IEEE} International Parallel and Distributed Processing Symposium ({IPDPS})},
+  pages     = {13--22},
+  publisher = {{IEEE}},
+  year      = {2019},
+  doi       = {10.1109/IPDPS.2019.00013}
 }
 
-@inproceedings{henzinger2020finding,
+@inproceedings{DBLP:conf/esa/HenzingerN0S20,
   author    = {Monika Henzinger and Alexander Noe and Christian Schulz and Darren Strash},
   title     = {Finding All Global Minimum Cuts in Practice},
   booktitle = {28th Annual European Symposium on Algorithms ({ESA} 2020)},
-  year      = {2020}
+  series    = {LIPIcs},
+  volume    = {173},
+  pages     = {59:1--59:20},
+  publisher = {Schloss Dagstuhl - Leibniz-Zentrum f{\"{u}}r Informatik},
+  year      = {2020},
+  doi       = {10.4230/LIPIcs.ESA.2020.59}
 }
 
-@article{henzinger2021practical,
-  author  = {Monika Henzinger and Alexander Noe and Christian Schulz},
-  title   = {Practical Fully Dynamic Minimum Cut Algorithms},
-  journal = {arXiv preprint arXiv:2101.05033},
-  year    = {2021}
+@inproceedings{DBLP:conf/alenex/HenzingerN022,
+  author    = {Monika Henzinger and Alexander Noe and Christian Schulz},
+  title     = {Practical Fully Dynamic Minimum Cut Algorithms},
+  booktitle = {Proceedings of the 24th Symposium on Algorithm Engineering and Experiments ({ALENEX} 2022)},
+  pages     = {13--26},
+  publisher = {{SIAM}},
+  year      = {2022},
+  doi       = {10.1137/1.9781611977042.2}
 }
 
-@inproceedings{henzinger2020sharedmemory,
+@inproceedings{DBLP:conf/alenex/HenzingerN020,
   author    = {Monika Henzinger and Alexander Noe and Christian Schulz},
   title     = {Shared-Memory Branch-and-Reduce for Multiterminal Cuts},
-  booktitle = {Proceedings of the 22nd Workshop on Algorithm Engineering and Experiments ({ALENEX} 2020)},
+  booktitle = {Proceedings of the 22nd Symposium on Algorithm Engineering and Experiments ({ALENEX} 2020)},
+  pages     = {42--55},
   publisher = {{SIAM}},
-  year      = {2020}
+  year      = {2020},
+  doi       = {10.1137/1.9781611976007.4}
 }
 
-@article{henzinger2020faster,
-  author  = {Monika Henzinger and Alexander Noe and Christian Schulz},
-  title   = {Faster Parallel Multiterminal Cuts},
-  journal = {arXiv preprint arXiv:2004.11666},
-  year    = {2020}
+@inproceedings{DBLP:conf/acda/HenzingerN021,
+  author    = {Monika Henzinger and Alexander Noe and Christian Schulz},
+  title     = {Faster Parallel Multiterminal Cuts},
+  booktitle = {Proceedings of the 2021 {SIAM} Conference on Applied and Computational Discrete Algorithms ({ACDA} 2021)},
+  pages     = {100--110},
+  publisher = {{SIAM}},
+  year      = {2021},
+  doi       = {10.1137/1.9781611976830.10}
 }
 ```
