@@ -3,7 +3,6 @@ VieCut 1.00
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
 [![CMake](https://img.shields.io/badge/CMake-3.9+-064F8C.svg)](https://cmake.org/)
 [![Linux](https://img.shields.io/badge/Linux-supported-success.svg)](https://github.com/KaHIP/VieCut)
-[![macOS](https://img.shields.io/badge/macOS-supported-success.svg)](https://github.com/KaHIP/VieCut)
 [![GitHub Stars](https://img.shields.io/github/stars/KaHIP/VieCut)](https://github.com/KaHIP/VieCut/stargazers)
 [![GitHub Issues](https://img.shields.io/github/issues/KaHIP/VieCut)](https://github.com/KaHIP/VieCut/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/KaHIP/VieCut)](https://github.com/KaHIP/VieCut/commits)
@@ -13,6 +12,7 @@ VieCut 1.00
 [![arXiv](https://img.shields.io/badge/arXiv-1708.06127-b31b1b.svg)](https://arxiv.org/abs/1708.06127)
 [![arXiv](https://img.shields.io/badge/arXiv-1808.05458-b31b1b.svg)](https://arxiv.org/abs/1808.05458)
 [![arXiv](https://img.shields.io/badge/arXiv-2002.06948-b31b1b.svg)](https://arxiv.org/abs/2002.06948)
+[![Homebrew](https://img.shields.io/badge/homebrew-available-orange)](https://github.com/KaHIP/homebrew-kahip)
 [![Heidelberg University](https://img.shields.io/badge/Heidelberg-University-c1002a)](https://www.uni-heidelberg.de)
 =====
 
@@ -32,7 +32,7 @@ VieCut 1.00
 
 ## Quick Start
 
-### Install via Homebrew
+### Install via Homebrew (Linux only)
 
 ```bash
 brew install KaHIP/kahip/viecut
