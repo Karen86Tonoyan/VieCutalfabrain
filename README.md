@@ -10,6 +10,9 @@ VieCut 1.00
 [![JEA 2018](https://img.shields.io/badge/JEA'18-10.1145/3274662-blue)](https://doi.org/10.1145/3274662)
 [![IPDPS 2019](https://img.shields.io/badge/IPDPS'19-10.1109/IPDPS.2019.00013-blue)](https://doi.org/10.1109/IPDPS.2019.00013)
 [![ESA 2020](https://img.shields.io/badge/ESA'20-10.4230/LIPIcs.ESA.2020.59-blue)](https://doi.org/10.4230/LIPIcs.ESA.2020.59)
+[![arXiv](https://img.shields.io/badge/arXiv-1708.06127-b31b1b.svg)](https://arxiv.org/abs/1708.06127)
+[![arXiv](https://img.shields.io/badge/arXiv-1808.05458-b31b1b.svg)](https://arxiv.org/abs/1808.05458)
+[![arXiv](https://img.shields.io/badge/arXiv-2002.06948-b31b1b.svg)](https://arxiv.org/abs/2002.06948)
 [![Heidelberg University](https://img.shields.io/badge/Heidelberg-University-c1002a)](https://www.uni-heidelberg.de)
 =====
 
