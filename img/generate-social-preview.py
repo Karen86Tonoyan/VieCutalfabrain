@@ -26,35 +26,38 @@ orange = (255, 138, 101)    # #ff8a65 - T partition
 red_cut = (239, 83, 80)     # #ef5350 - cut line
 bg = (26, 26, 46)
 
-# S partition nodes (left side of graph area)
+# S partition nodes (left side, densely connected)
 s_nodes = [
-    (680, 100), (740, 200), (660, 280), (770, 340),
-    (640, 170), (720, 300), (690, 400), (750, 450),
+    (660, 100), (730, 140), (680, 210), (750, 250),
+    (640, 300), (720, 340), (660, 400), (740, 430),
+    (690, 480), (770, 180),
 ]
 
-# T partition nodes (right side of graph area)
+# T partition nodes (right side, densely connected)
 t_nodes = [
-    (1000, 90), (950, 180), (1030, 220), (970, 310),
-    (1050, 330), (1000, 420), (1060, 160), (980, 450),
+    (1010, 100), (1080, 140), (1030, 210), (1100, 250),
+    (990, 300), (1070, 340), (1020, 400), (1090, 430),
+    (1040, 480), (960, 180),
 ]
 
-# Intra-partition edges (S)
+# Intra-partition edges (S) - well connected
 s_edges = [
-    (0, 1), (0, 4), (4, 2), (1, 2), (1, 5), (2, 5),
-    (5, 3), (5, 6), (3, 7), (6, 7),
+    (0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (2, 4),
+    (3, 5), (4, 5), (4, 6), (5, 6), (5, 7), (6, 7),
+    (6, 8), (7, 8), (0, 9), (1, 9), (3, 9), (9, 5),
 ]
 
-# Intra-partition edges (T)
+# Intra-partition edges (T) - well connected
 t_edges = [
-    (0, 1), (0, 6), (1, 2), (6, 2), (1, 3), (2, 4),
-    (3, 4), (3, 5), (4, 5), (5, 7),
+    (0, 1), (0, 2), (1, 2), (1, 3), (2, 3), (2, 4),
+    (3, 5), (4, 5), (4, 6), (5, 6), (5, 7), (6, 7),
+    (6, 8), (7, 8), (0, 9), (9, 2), (9, 4), (1, 3),
 ]
 
-# Cut edges (crossing S to T)
+# Cut edges - only 2 edges cross, making it a clear minimum cut
 cut_edges = [
-    (1, 1),  # S[1] to T[1]
-    (3, 3),  # S[3] to T[3]
-    (7, 7),  # S[7] to T[7]
+    (3, 9),  # S[3] to T[9]
+    (5, 4),  # S[5] to T[4]
 ]
 
 # Draw intra-S edges
