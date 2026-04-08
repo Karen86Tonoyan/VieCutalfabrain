@@ -267,4 +267,68 @@ If you publish results using our algorithms, please cite the applicable papers:
   year      = {2021},
   doi       = {10.1137/1.9781611976830.10}
 }
+``# VieCutalfabrain \u2014 ALFA Brain Graph Engine
+
+**Fork: Karen Tonoyan / ALFA Ecosystem \u00a9 2026**
+**Base: [KaHIP/VieCut](https://github.com/KaHIP/VieCut) \u2014 Heidelberg University \u2014 MIT License**
+
+---
+
+## Czym jest ten fork
+
+`VieCutalfabrain` integruje r\u00f3wnoleg\u0142e algorytmy minimum cut z architektury VieCut
+jako matematyczny silnik podzia\u0142u kontekstu w **ALFA Brain**.
+
+ALFA Brain traktuje kontekst jako wa\u017cony graf nieskierowany:
+- **w\u0119z\u0142y** = jednostki semantyczne (tokeny, wspomnienia, decyzje, sygna\u0142y)
+- **kraw\u0119dzie** = wagi relewancji mi\u0119dzy jednostkami
+
+Algorytmy minimum cut wyznaczaj\u0105 gdzie **dok\u0142adnie** podzieli\u0107 ten graf \u2014
+bez aproksymacji probabilistycznej, bez dryftu uwagi.
+
 ```
+KONTEKST WEJ\u015aCIOWY
+        \u2193
+  [VieCut Graph Engine]
+        \u2193
+  minimum cut boundary
+        \u2193
+\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
+\u2502  YESTERDAY  \u2502    TODAY    \u2502  TOMORROW   \u2502
+\u2502  temp: 0.3  \u2502  temp: 0.5  \u2502  temp: 0.8  \u2502
+\u2502  mem: 20    \u2502  mem: 10    \u2502  mem: 5     \u2502
+\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+        \u2193
+  Guardian Tagger \u2192 SPR Router \u2192 Model
+```
+
+---
+
+## Rola w ekosystemie ALFA
+
+| Komponent ALFA     | Zastosowanie VieCut                                      |
+|--------------------|----------------------------------------------------------|
+| **ALFA Brain**     | Partycjonowanie grafu kontekstu (Yesterday/Today/Tomorrow) |
+| **Guardian Tagger**| Wykrywanie granic pewno\u015bci (confidence boundary detection) |
+| **SPR Router**     | Scoring wag kraw\u0119dzi mi\u0119dzy partycjami                   |
+| **Cerber Gate**    | Strefy kontroli dost\u0119pu na poziomie grafu                |
+| **\u0141asuch v1.2**    | Klasyfikacja ryzyka jako problem minimum cut             |
+
+---
+
+## Filtry rygorystyczne \u2014 FILTRY TONOYANA v1.0
+
+Siedem filtr\u00f3w anty-halucynacyjnych (TDCM \u2014 Dual Cognition Framework)
+zmapowanych na operacje grafowe VieCut.
+
+Ka\u017cdy filtr dzia\u0142a jako **osobna warstwa ci\u0119cia grafu** przed przekazaniem
+kontekstu do modelu.
+
+---
+
+### Filtr 1 \u2014 KONTRARGUMENT
+**Cel:** Wymuszenie alternatywnej \u015bcie\u017cki rozumowania przed odpowiedzi\u0105.
+
+**Operacja grafowa:**
+```
+mincut_parallel context.graph cactus -s
